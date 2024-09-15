@@ -84,8 +84,8 @@ main {
         color: #ffffff;
         text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
         box-shadow: 0 0 5px rgba(166, 197, 26, 0.5),
-                    0 0 30px rgba(166, 197, 26, 0.4),
-                    0 0 40px rgba(166, 197, 26, 0.3);
+            0 0 30px rgba(166, 197, 26, 0.4),
+            0 0 40px rgba(166, 197, 26, 0.3);
         cursor: pointer;
         margin: 40px 0 0 0;
     }
@@ -95,4 +95,25 @@ main {
         color: #FFFF99;
     }
 
+}
+
+/* Para telas até 1024px (tablets em modo paisagem) */
+@media (max-width: 1024px) {}
+
+/* Para telas até 768px (tablets e smartphones grandes) */
+@media (max-width: 768px) {}
+
+/* Para telas até 480px (smartphones pequenos) */
+@media (max-width: 480px) {
+    .conteudo {
+        img {
+            width: 350px;
+            height: 250px;
+        }
+    }
+
+    .div1 input {
+
+        width: 150px !important;
+    }
 }
